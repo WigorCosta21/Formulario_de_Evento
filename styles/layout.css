@@ -7,12 +7,28 @@
 }
 
 aside {
+    background: url(../assets/background.png) no-repeat center / cover;
     padding: 2rem;
     border-radius: 0.75rem;
 }
 
 .aside-container {
     max-width: 25rem;
+
+    & img {
+        height: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    & h2 {
+        font: var(--text-logo);
+        color: var(--feedback-danger);
+        margin-bottom: 0.5rem;
+    }
+
+    & p {
+        font: 300 1rem/normal var(--font-body-family);
+    }
 }
 
 main {
