@@ -65,3 +65,13 @@ img {
     margin: 0 auto;
     padding: 1.25rem;
 }
+
+@media screen and (max-width: 51.25rem) {
+    body {
+        overflow: visible;
+    }
+
+    .container {
+        padding: 0;
+    }
+}
