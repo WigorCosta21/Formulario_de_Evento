@@ -1,0 +1,21 @@
+#contact-details {
+
+    & .input-area {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        div {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 64rem) {
+    #contact-details {
+
+        & .input-area {
+            flex-direction: column;
+        }
+    }
+}

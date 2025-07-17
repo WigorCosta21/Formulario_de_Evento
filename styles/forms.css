@@ -64,6 +64,29 @@ textarea {
     height: 136px;
 }
 
+.input-wrapper:has(input:valid) .error {
+    display: none;
+}
+
+input {
+    &:invalid {
+        outline: 1px solid var(--feedback-danger);
+    }
+
+    &:valid+.error {
+        display: none;
+    }
+
+    &[required]+.error {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font: var(--text-body-xs);
+        color: var(--feedback-danger);
+        margin-top: 0.5rem;
+    }
+}
+
 .radio-inner {
     position: relative;
 
